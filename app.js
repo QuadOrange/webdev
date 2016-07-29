@@ -1,3 +1,6 @@
+
+var index = 0;
+
 $(function() {
 // code for clicking button .etc
 
@@ -10,6 +13,8 @@ $(function() {
                 // instead of using alerts!
                 $("#setup").html(data.setup);
                 $("#punchline").html(data.punchline);
+                index = data.id;
+                alert(index);
             },"json")
         }
     );
