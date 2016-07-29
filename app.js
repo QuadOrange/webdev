@@ -15,8 +15,8 @@ $(function() {
                 $("#punchline").html(data.punchline);
                 index = data.id;
                 alert(index);
-            },"json")
-        }
+            },"json");
+        };
     );
     $('#upvote').on("click", function() {
         $.post("/upvote");
