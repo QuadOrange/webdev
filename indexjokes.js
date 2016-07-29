@@ -21,6 +21,6 @@ app.route('/jokes').get(function(req,res,next){
     var randomNumber = Math.floor(Math.random()*jokes.length);
 
     res.send(jokes[randomNumber]);
-    jokes[randomNUmber].id = randomNumber;
+    jokes[randomNumber].id = randomNumber;
 app.post('/upvote', function(req, res {...}));
 });
