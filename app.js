@@ -13,4 +13,10 @@ $(function() {
             },"json")
         }
     );
+    $('#upvote').on("click", function() {
+        $.post("/upvote");
+    });
+    $('#downvote').on("click", function() {
+        $.post("/downvote");
+    });
 });
